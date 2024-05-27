@@ -35,9 +35,11 @@ Route::delete('products/{id}', [ProductController::class, 'destroy']);
    
 6. npm install
 
-7. Please import the DB it is located in the database folder.
+7. php artisan migrate
 
-8. Then in the terminal run these commands,
+8. go to database/inventory_system.sql insert query for dummy data
+
+9. Then in the terminal run these commands,
 
   3.1 To start the server
       php artisan serve
@@ -53,11 +55,11 @@ Route::delete('products/{id}', [ProductController::class, 'destroy']);
 
 9. Here in this system there are 2 users. One is admin another is user. So the below rule follows,
 
-5.1 Only admin can update and delete the product. Set is_admin to 1 in DB.
+   5.1 Only admin can update and delete the product. Set is_admin to 1 in DB.
 
-5.2 Other registered users will be automatically normal user who can view and create the products. 
+   5.2 Other registered users will be automatically normal user who can view and create the products. 
 
-5.3 If other than admin finds out even the url to delete or update product he/she will be redirected to the dashboard page.
+   5.3 If other than admin finds out even the url to delete or update product he/she will be redirected to the dashboard page.
 
 
 
